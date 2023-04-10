@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1repMax</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Open+Sans:wght@300&display=swap">
+    <style>
+        body {
+            /* isme dali gayi property by default ho jayega */
+            margin: 0px;
+            padding: 0px;
+            background: url('images/bg.jpeg');
+            background-size: contain;
+            height: 2033px;
+            color: white;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            /*kyuki background dark hai isi liye color white*/
+
+        }
+
+        .left {
+            display: inline-block;
+            /*zyada jagah nhi khayega, aur ek line me ek se zyad bhi a jayega*/
+            /* border: 2px solid red; */
+            position: absolute;
+            /*top left me a jayega */
+            top: 20px;
+            left: 12px;
+
+        }
+
+        .left img {
+            width: 81px;
+            filter: invert(100%);   /*color ko change wagera krta hai kuch*/
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        #name {
+            margin: 1px 10px;
+        }
+
+        .center {
+            /* border: 2px solid red; */
+             display: block;
+            margin: 33px auto;
+            width: 33%; 
+            
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 12px;
+            /* left: 300px; */
+            /* border: 2px solid red; */
+            cursor: pointer;
+
+        }
+
+
+        .btn {
+            margin: 12px;
+            padding: 1px;
+            color: white;
+            background-color: rgb(103, 89, 89);
+            border: 2px solid rgb(53, 45, 45);
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+        }
+
+        .btn:hover {
+            color: rgb(207, 241, 11);
+            text-decoration: underline;
+        }
+
+
+        .navbar li {
+            display: inline-block;
+            /*so that saare element ek line me a jaye*/
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 12px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            /*active element se jis page par ham honge wo page underline aur colored ho jayega*/
+            text-decoration: underline;
+            color: rgb(207, 241, 11);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 93px 71px;
+            padding: 2px 2px;
+            width: 33%;
+            border-radius: 26px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .formgroup input{
+            text-align: center;
+            border: 2px solid rgb(14, 13, 13);
+            margin: 12px auto;
+            padding: 4px;
+            display: block;
+            width: 69%;
+            font-size: 13px;
+            border-radius: 12px;
+            font-family:'Kdam Thmor Pro', sans-serif ;
+        }
+        .container h1{
+            text-align: center;
+            
+        }
+        .container button{
+            display: block;
+            margin: 12px auto 33px auto;
+            width: 72%;
+            
+            padding: 3px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img src="images/logo.png" alt=""><br>
+            <div id="name">1repMax</div>
+        </div>
+
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="">MENU</a></li>
+                <li><a href="">MEMBERSHIP</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">CALL US</button>
+            <button class="btn">EMAIL US</button>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h1>JOIN US NOW!</h1>
+        <form action="no.backend">
+           <div class="formgroup">
+             <input type="text" name="" id="" placeholder="enter your name">
+           </div>
+           <div class="formgroup">
+             <input type="text" name="" id="" placeholder="enter your age">
+           </div>
+           <div class="formgroup">
+             <input type="text" name="" id="" placeholder="enter your gender">
+           </div>
+           <div class="formgroup">
+             <input type="text" name="" id="" placeholder="enter your locality">
+           </div>
+           <div class="formgroup">
+             <input type="text" name="" id="" placeholder="enter your E-Mail">
+           </div>
+           <div class="formgroup">
+             <input type="text" name="" id="" placeholder="enter your Ph. Number">
+           </div>
+           <button class="btn">SUBMIT</button>
+           
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!-- isme hamne external css ka istemaal nhi kiya,aur js to seekhi hi nhi. So those folders are used -->
